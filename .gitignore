@@ -22,3 +22,5 @@ target
 pom.xml
 build.xml
 /test-results
+/nashorn_code_cache
+.cljs_nashorn_repl/
