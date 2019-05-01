@@ -1,0 +1,30 @@
+printing-transport: {:id "28", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "29", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {"resource" "nrepl/server.clj", "author" "Chas Emerick", :status #{:done}, "line" 1, :id "30", "file" "file:/Users/pez/Projects/nREPL/src/clojure/nrepl/server.clj", "doc" "Default server implementations", "ns" "nrepl.server", :session "146aa905-9d00-43d9-8219-059ba8bb29f1"}
+printing-transport: {:id "31", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "32", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "33", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "34", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "35", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "36", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "37", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "38", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "39", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "40", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id 41, :session 59cd1610-583e-4675-91a3-447a2633f794, :out To quit, type: :cljs/quit
+}
+printing-transport: {:id "41", :session "59cd1610-583e-4675-91a3-447a2633f794", :ns "cljs.user", :value nil}
+printing-transport: {:id "41", :session "59cd1610-583e-4675-91a3-447a2633f794", :status #{:done}}
+printing-transport: {:id "42", :session "59cd1610-583e-4675-91a3-447a2633f794", :value "2", :printed-value 1, :ns cljs.user}
+printing-transport: {:id "42", :session "59cd1610-583e-4675-91a3-447a2633f794", :status #{:done}}
+printing-transport: {:id "43", :session "59cd1610-583e-4675-91a3-447a2633f794", :value "nil", :printed-value 1, :ns cljs.user}
+printing-transport: {:id "43", :session "59cd1610-583e-4675-91a3-447a2633f794", :status #{:done}}
+printing-transport: {:id "44", :session "59cd1610-583e-4675-91a3-447a2633f794", :ns "live-hacking", :value "nil", :printed-value 1}
+printing-transport: {:id "44", :session "59cd1610-583e-4675-91a3-447a2633f794", :status #{:done}}
+printing-transport: {:id "45", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {"resource" "nrepl/middleware/print.clj", "name" "printing-transport", :status #{:done}, "line" 165, :id "46", "column" 1, "file" "file:/Users/pez/Projects/nREPL/src/clojure/nrepl/middleware/print.clj", "arglists-str" "[{:keys [transport], :as msg} opts]", "ns" "nrepl.middleware.print", :session "146aa905-9d00-43d9-8219-059ba8bb29f1"}
+printing-transport: {:id "47", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {"resource" "nrepl/middleware/print.clj", "name" "printing-transport", :status #{:done}, "line" 165, :id "48", "column" 1, "file" "file:/Users/pez/Projects/nREPL/src/clojure/nrepl/middleware/print.clj", "arglists-str" "[{:keys [transport], :as msg} opts]", "ns" "nrepl.middleware.print", :session "146aa905-9d00-43d9-8219-059ba8bb29f1"}
+printing-transport: {:id "49", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "50", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}
+printing-transport: {:id "51", :session "146aa905-9d00-43d9-8219-059ba8bb29f1", :status #{:done :no-info}}

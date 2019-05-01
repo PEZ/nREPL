@@ -180,8 +180,8 @@
         #_(swap! printing-log (pr-str things))
         #_(println "printing-transport msg: " (pr-str msg))
         #_(println "printing-transport msg: " (select-keys msg [:op :ns :code]))
-        (prn "printing-transport msg: ")
         #_(println "printing-transport resp: " (pr-str resp ))
+        (spit "printing-transport-log.txt" (str "printing-transport: " (pr-str resp) "\n") :append true)
         #_(println "printing-transport opts: " (pr-str opts))
         #_(println "printing-transport stream?: "  stream?)
         (if stream?
