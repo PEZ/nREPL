@@ -28,7 +28,8 @@
                                     :password :env/clojars_password
                                     :sign-releases false}]]
 
-  :profiles {:fastlane {:dependencies [[nrepl/fastlane "0.1.0"]]}
+  :profiles {:fig {:source-paths ["src" "target"]}
+             :fastlane {:dependencies [[nrepl/fastlane "0.1.0"]]}
              :test {:dependencies [[com.hypirion/io "0.3.1"]]
                     :plugins      [[test2junit "1.4.2"]]
                     :test2junit-output-dir "test-results"
