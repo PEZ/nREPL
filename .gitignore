@@ -20,3 +20,7 @@ target
 /.lein*
 /.nrepl-port
 pom.xml
+.cljs_nashorn_repl/
+nashorn_code_cache/
+build.xml
+test-results/
