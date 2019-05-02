@@ -158,10 +158,6 @@
                                 (::truncated-keys resp)
                                 (update :status #(set (conj % ::truncated)))))))
 
-#_(def printing-log (atom []))
-(comment
-  (deref printing-log))
-
 (defn- printing-transport
   [{:keys [transport] :as msg} opts]
   (reify Transport
@@ -174,16 +170,7 @@
                                              (select-keys configuration-keys))
             resp (apply dissoc resp configuration-keys)
             pmsg (merge {} msg)]
-        #_(def things {:resp resp
-                     :msg msg
-                     :opts opts})
-        #_(swap! printing-log (pr-str things))
-        #_(println "printing-transport msg: " (pr-str msg))
-        #_(println "printing-transport msg: " (select-keys msg [:op :ns :code]))
-        #_(println "printing-transport resp: " (pr-str resp ))
         (spit "printing-transport-log.txt" (str "printing-transport: " (pr-str resp) "\n") :append true)
-        #_(println "printing-transport opts: " (pr-str opts))
-        #_(println "printing-transport stream?: "  stream?)
         (if stream?
           (send-streamed msg resp opts)
           (send-nonstreamed msg resp opts)))
