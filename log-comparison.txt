@@ -1,0 +1,30 @@
+# 0.6.0
+
+Evaluating:
+  ;; Skipped this in the output below
+  ;; (cider.piggieback/cljs-repl (cljs.repl.nashorn/repl-env))
+  (+ 1 1)
+  (println 1)
+  :cljs/quit
+
+## Calva's nrepl client log:
+nrc sending: {"op":"eval","session":"418d21f5-8cc5-47b4-a51c-be817ab10a00","code":"(+ 1 1)","id":"11"}
+nrc receiving: {"id":"11","ns":"cljs.user","printed-value":1,"session":"418d21f5-8cc5-47b4-a51c-be817ab10a00","value":"2"}
+nrc receiving: {"id":"11","session":"418d21f5-8cc5-47b4-a51c-be817ab10a00","status":["done"]}
+nrc sending: {"op":"eval","session":"418d21f5-8cc5-47b4-a51c-be817ab10a00","code":"(println 1)","id":"12"}
+nrc receiving: {"id":"12","ns":"cljs.user","printed-value":1,"session":"418d21f5-8cc5-47b4-a51c-be817ab10a00","value":"nil"}
+nrc receiving: {"id":"12","session":"418d21f5-8cc5-47b4-a51c-be817ab10a00","status":["done"]}
+nrc sending: {"op":"eval","session":"418d21f5-8cc5-47b4-a51c-be817ab10a00","code":":cljs/quit","id":"13"}
+nrc receiving: {"id":"13","ns":"live-hacking","printed-value":1,"session":"418d21f5-8cc5-47b4-a51c-be817ab10a00","value":"nil"}
+nrc receiving: {"id":"13","session":"418d21f5-8cc5-47b4-a51c-be817ab10a00","status":["done"]}
+
+## nrepl's printing-transport log:
+printing-transport: {:id "11", :session "418d21f5-8cc5-47b4-a51c-be817ab10a00", :value "2", :printed-value 1, :ns cljs.user}
+printing-transport: {:id "11", :session "418d21f5-8cc5-47b4-a51c-be817ab10a00", :status #{:done}}
+printing-transport: {:id "11", :session "418d21f5-8cc5-47b4-a51c-be817ab10a00", :changed-namespaces {}, :repl-type :cljs, :status #{:state}}
+printing-transport: {:id "12", :session "418d21f5-8cc5-47b4-a51c-be817ab10a00", :value "nil", :printed-value 1, :ns cljs.user}
+printing-transport: {:id "12", :session "418d21f5-8cc5-47b4-a51c-be817ab10a00", :status #{:done}}
+printing-transport: {:id "12", :session "418d21f5-8cc5-47b4-a51c-be817ab10a00", :changed-namespaces {}, :repl-type :cljs, :status #{:state}}
+printing-transport: {:id "13", :session "418d21f5-8cc5-47b4-a51c-be817ab10a00", :ns "live-hacking", :value "nil", :printed-value 1}
+printing-transport: {:id "13", :session "418d21f5-8cc5-47b4-a51c-be817ab10a00", :status #{:done}}
+printing-transport: {:id "13", :session "418d21f5-8cc5-47b4-a51c-be817ab10a00", :changed-namespaces {"live-hacking" {"aliases" {}, "interns" {"->Delegatingcljs_repl_nashorn_NashornEnv" {"arglists" "([repl-env])", "doc" "\"Positional factory function for class live_hacking.Delegatingcljs_repl_nashorn_NashornEnv.\"", "fn" "true"}}}, "cljs.user" {"aliases" {}, "interns" {}}}, :repl-type :clj, :status #{:state}}

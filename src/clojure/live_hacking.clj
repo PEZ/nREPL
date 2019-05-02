@@ -1,4 +1,4 @@
-(ns live-hacking)
+(ns clojure.live-hacking)
 
 (comment
   (require '[nrepl.server :refer [start-server stop-server]])
@@ -26,5 +26,14 @@
   (require 'cljs.repl.nashorn)
   (cider.piggieback/cljs-repl (cljs.repl.nashorn/repl-env))
   (+ 1 1)
-  (println 1)
+  (enable-console-print!)
+  (println "hello")
+  :cljs/quit
+
+  (require 'figwheel.main.api)
+  (figwheel.main.api/start "dev")
+  (figwheel.main.api/cljs-repl "dev")
+  (+ 1 1)
+  (enable-console-print!)
+  (println "hello")
   :cljs/quit)
