@@ -21,10 +21,10 @@
   (+ 1 1)
   (println 1)
 
+  (js/console.log "Hello")
 
   (require 'cljs.repl.nashorn)
   (cider.piggieback/cljs-repl (cljs.repl.nashorn/repl-env))
   (+ 1 1)
-  (js/console.log "Hello")
   (println 1)
   :cljs/quit)

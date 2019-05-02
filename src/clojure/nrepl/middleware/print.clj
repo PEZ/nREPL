@@ -168,8 +168,8 @@
     (send [this resp]
       (let [{:keys [::stream?] :as opts} (-> (merge msg (bound-configuration) resp opts)
                                              (select-keys configuration-keys))
-            resp (apply dissoc resp configuration-keys)
-            pmsg (merge {} msg)]
+            resp (apply dissoc resp configuration-keys)]
+        #_(when (not= (:op resp) "info"))
         (spit "printing-transport-log.txt" (str "printing-transport: " (pr-str resp) "\n") :append true)
         (if stream?
           (send-streamed msg resp opts)
