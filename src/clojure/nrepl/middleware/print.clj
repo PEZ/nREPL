@@ -170,7 +170,7 @@
                                              (select-keys configuration-keys))
             resp (apply dissoc resp configuration-keys)]
         #_(when (not= (:op resp) "info"))
-        (spit "printing-transport-log.txt" (str "printing-transport: " (pr-str resp) "\n") :append true)
+        (spit "printing-transport-log.txt" (str "printing-transport: " (:id resp) " " (pr-str resp) "\n") :append true)
         (if stream?
           (send-streamed msg resp opts)
           (send-nonstreamed msg resp opts)))
